@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6CEEB49D-BCBE-415C-A82D-CB1E0D172EFB}</ProjectGuid>
+    <RootNamespace>Project2</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>E:\Qt\Qt5\5.12.2\msvc2015_64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src-1\assert.cpp" />
+    <ClCompile Include="..\..\..\..\src-1\commandline.cpp" />
+    <ClCompile Include="..\..\..\..\src-1\Cover_Tree_Point.cpp" />
+    <ClCompile Include="..\..\..\..\src-1\del_impl.cpp" />
+    <ClCompile Include="..\..\..\..\src-1\generator.cpp" />
+    <ClCompile Include="..\..\..\..\src-1\geom.cpp" />
+    <ClCompile Include="..\..\..\..\src-1\random.cpp" />
+    <ClCompile Include="..\..\..\..\src-1\solver.cpp" />
+    <ClCompile Include="..\..\..\..\src-1\stats.cpp" />
+    <ClCompile Include="..\..\..\..\src-1\test.cpp" />
+    <ClCompile Include="..\..\..\..\src-1\text.cpp" />
+    <ClCompile Include="..\..\..\..\src-1\timer.cpp" />
+    <ClCompile Include="..\..\..\..\src-1\timing.cpp" />
+    <ClCompile Include="..\..\..\..\src-1\verify.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src-1\assert.h" />
+    <ClInclude Include="..\..\..\..\src-1\binaryheap.h" />
+    <ClInclude Include="..\..\..\..\src-1\commandline.h" />
+    <ClInclude Include="..\..\..\..\src-1\Cover_Tree.h" />
+    <ClInclude Include="..\..\..\..\src-1\Cover_Tree_Point.h" />
+    <ClInclude Include="..\..\..\..\src-1\del_interface.h" />
+    <ClInclude Include="..\..\..\..\src-1\del_interface.hpp" />
+    <ClInclude Include="..\..\..\..\src-1\dpoint.h" />
+    <ClInclude Include="..\..\..\..\src-1\fibheap.h" />
+    <ClInclude Include="..\..\..\..\src-1\generator.h" />
+    <ClInclude Include="..\..\..\..\src-1\geom.h" />
+    <ClInclude Include="..\..\..\..\src-1\logstuff.h" />
+    <ClInclude Include="..\..\..\..\src-1\memory.h" />
+    <ClInclude Include="..\..\..\..\src-1\mystack.h" />
+    <ClInclude Include="..\..\..\..\src-1\random.h" />
+    <ClInclude Include="..\..\..\..\src-1\rangetree.h" />
+    <ClInclude Include="..\..\..\..\src-1\scapegoat.h" />
+    <ClInclude Include="..\..\..\..\src-1\solver.h" />
+    <ClInclude Include="..\..\..\..\src-1\stats.h" />
+    <ClInclude Include="..\..\..\..\src-1\structures.h" />
+    <ClInclude Include="..\..\..\..\src-1\text.h" />
+    <ClInclude Include="..\..\..\..\src-1\timer.h" />
+    <ClInclude Include="..\..\..\..\src-1\timing.h" />
+    <ClInclude Include="..\..\..\..\src-1\treap.h" />
+    <ClInclude Include="..\..\..\..\src-1\triangle.h" />
+    <ClInclude Include="..\..\..\..\src-1\triangle_impl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\src-1\moc_config.cxx_parameters" />
+    <None Include="..\..\..\..\src-1\moc_glwidget.cxx_parameters" />
+    <None Include="..\..\..\..\src-1\moc_window.cxx_parameters" />
+    <None Include="..\..\..\..\src-1\moc_worker.cxx_parameters" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
